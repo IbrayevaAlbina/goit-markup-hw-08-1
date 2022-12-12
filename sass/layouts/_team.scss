@@ -1,7 +1,13 @@
 .team {
     background: #f5f4fa;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:768px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+      
+    }
   }
   
   
@@ -19,7 +25,13 @@
   
   .team__list {
     display: flex;
+    flex-direction: column;
     list-style-type: none;
+  @media screen and (min-width:768px) {
+  display: flex;
+  list-style-type: none;
+  
+}
   }
 
   .team__pictures {

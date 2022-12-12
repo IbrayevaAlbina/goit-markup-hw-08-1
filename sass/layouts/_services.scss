@@ -15,17 +15,30 @@
   
   
   .services__title {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    // line-height: 1.6px;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  
+
+   @media screen and (min-width: 768) {
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
     color: var(--white);
     max-width: 696px;
     margin: 0 auto;
     margin-bottom: 30px;
+    
+   }
   }
 
 
@@ -44,8 +57,16 @@
     border-radius: 4px;
     margin: 0 auto;
     border: none;
-    padding: 10px 32px;
+    padding: 10px 24px;
     transition: background-color var(--transition-dur-and-func);
+
+    @media screen and (min-width: 768px) {
+     
+      margin: 0 auto;
+      border: none;
+      padding: 10px 32px;
+      transition: background-color var(--transition-dur-and-func);
+    }
 
 
     &:hover,
