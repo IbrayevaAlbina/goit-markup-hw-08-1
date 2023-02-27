@@ -31,28 +31,79 @@
             </li>
           </ul>
 
+
+                <!-- contacts -->
+                <ul class="contacts-social__list">
+                  <li class="contacts-social__item">
+                    <a class="contacts-social__link" href="mailto:info@devstudio.com">
+                        <svg class="contacts-social__icon--envelop contacts-social__link">
+                          <use href="./img/icons/symbol-defs.svg#icon-envelope  "></use>
+                        </svg>
+                        info@devstudio.com
+                      </a>
+                    </li>
+                    <li class="contacts-social__item">
+                      <a class="contacts-social__link" href="tel:+380961111111">
+                        <svg class="contacts-social__icon--smartphone contacts-social__link">
+                          <use href="./img/icons/symbol-defs.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                      </a>
+                    </li>
+                  </ul>
+
+
+                  <button
+          class="mobile-menu__open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="16"
+            fill="currentColor"
+            viewBox="viewBox=0 0 48 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M0 5.333v-5.333h48v5.333h-48zM0 18.667h48v-5.333h-48v5.333zM0 32h48v-5.333h-48v5.333z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+              
+            <!-- <use href="./img/icons/symbol-defs.svg#icon-close"></use> -->
+        </button>
+              </div>
+
+              
+
         </nav>
-          
-          <!-- contacts -->
-          <ul class="contacts-social__list">
-            <li class="contacts-social__item">
-              <a class="contacts-social__link "  href="mailto:info@devstudio.com" >
-                <svg class="contacts-social__icon--envelop contacts-social__link">
-                  <use href="./img/icons/symbol-defs.svg#icon-envelope  "></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="contacts-social__item">
-              <a class="contacts-social__link" href="tel:+380961111111">
-                <svg class="contacts-social__icon--smartphone contacts-social__link ">
-                  <use href="./img/icons/symbol-defs.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
+
+      <!-- <div> -->
+        <!-- <button class="mobile-menu__open js-open-menu" aria-controls="mobile-menu">
+          <svg class="mobile-menu__icon"  widht="24px" height="16px" fill="currentColor">
+            <use href="./img/icons/icon-menu_24px.svg#icon-menu_24px"></use>
+
+            
+            <use href="./img/icons/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button> -->
+      <!-- </div> -->
+
+      <!-- <div class="container"> -->
+        
+
+        <!-- <ul class="menu">
+          <li><a href="" class="link">About</a></li>
+          <li><a href="" class="link">Products</a></li>
+          <li><a href="" class="link">Contacts</a></li>
+          <li><a href="" class="link">Career</a></li>
+        </ul> -->
+      <!-- </div> -->
       </div>
+          
+  
 
     </header>
 
@@ -62,6 +113,7 @@
           <section class="services">
             <div class="container">
               <h1 class="services__title">Ефективні рішення для вашого бізнесу</h1>
+              <!-- <img class="services" src="./img/Header img@1x.jpg" alt="header"> -->
               <button class="services__button" data-modal-open type="button" >Замовити послугу</button>
             </div>
           </section>
@@ -159,7 +211,10 @@
             <h2 class="team__title">Наша команда</h2>
             <ul class="team__list">
             <li class="team__pictures">
-              <img src="./img/team.jpg" alt="команда" width="270" height="260">
+              <!-- <img src="./img/team.jpg" alt="команда" width="270" height="260"> -->
+              <img src="./img/team-480@1x.jpg" alt="команда" srcset="./img/team-480@1x.jpg 450w, ./img/team-480@2x.jpg 900w"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw">
+              
               <h3 class="team__name">Ігор Дем'яненко</h3>
               <p class="team__position">Product Designer</p>
 
@@ -196,7 +251,9 @@
             
             </li>
             <li class="team__pictures">
-              <img src="./img/team-1.jpg" alt="команда" width="270" height="260">
+              <!-- <img src="./img/team-1.jpg" alt="команда" width="270" height="260"> -->
+              <img src="./img/team-480@1x-1.jpg" alt="команда" srcset="./img/team-480@1x-1.jpg 450w, ./img/team-480@2x-1.jpg 900w"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw">
               <h3 class="team__name">Ольга Рєпіна</h3>
               <p class="team__position">Frontend Developer</p>
               <ul class="team-social">
@@ -231,7 +288,9 @@
               </ul>
             </li>
             <li class="team__pictures">
-              <img src="./img/team-2.jpg" alt="команда" width="270" height="260">
+              <!-- <img src="./img/team-2.jpg" alt="команда" width="270" height="260"> -->
+              <img src="./img/team-480@1x-2.jpg" alt="команда" srcset="./img/team-480@1x-2.jpg 450w, ./img/team-480@2x-2.jpg 900w"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw">
               <h3 class="team__name">Микола Тарасов</h3>
               <p class="team__position">Marketing</p>
               <ul class="team-social">
@@ -266,7 +325,9 @@
               </ul>
             </li>
             <li class="team__pictures">
-              <img src="./img/team-3.jpg" alt="команда" width="270" height="260">
+              <!-- <img src="./img/team-3.jpg" alt="команда" width="270" height="260"> -->
+              <img src="./img/team-480@1x-3.jpg" alt="команда" srcset="./img/team-480@1x-3.jpg 450w, ./img/team-480@2x-3.jpg 900w"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw">
               <h3 class="team__name">Михайло Єрмаков</h3>
               <p class="team__position">UI Designer</p>
               <ul class="team-social">
@@ -306,7 +367,7 @@
       </main> 
 
       <!-- lean-clients -->
-      <!-- <section class="lean-clients">
+       <section class="lean-clients">
         <div class="container">
           <h2 class="lean-clients__title">Постійні клієнти</h2>
           <ul class="lean-clients__list">
@@ -356,12 +417,12 @@
           </ul>
         </div>
 
-      </section> -->
+      </section> 
     
     
     <!-- contacts-2 -->
     <!-- footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="footer-container__position " > 
           <a href="./index.html" class="footer-logo__link"><span class="footer-span">Web</span>Studio</a>
@@ -430,12 +491,12 @@
        
         </div>
       </div>
-    </footer> -->
+    </footer> 
 
 
     <!-- backdrop -->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__btn--close" data-modal-close>
           <svg class="modal__icon--close" width="18" height="18">
@@ -502,7 +563,68 @@
       </div>
     </div>
 
-    <script src="./js/modal.js"></script> -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="mobile-menu__open js-close-menu">
+        <svg class="mobile-menu__svg"
+         
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile_link "><a href="" class="mobile_link">Студія</a></li>
+        <li class="mobile_link "><a href="http://127.0.0.1:1235/potfolio.html" class="mobile_link">Портфоліо</a></li>
+        <li class="mobile_link "><a href="" class="mobile_link">Контакти</a></li>
+      
+      </ul>
+      <ul>
+        <li class="mobile_link__tel ">
+          <a href="tel:+380961111111" class="mobile_link__tel">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile_link__mail ">
+          <a href="mailto:info@devstudio.com" class="mobile_link__mail">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul>
+        <li class="mobile_link__social"><a href="https://www.instagram.com/" class="mobile_link__social">Instagram
+          <svg class="mobile_line" width="1" height="22" viewBox="0 0 1 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0.5" x2="0.5" y2="22" stroke="#212121" stroke-opacity="0.2"/>
+            </svg>
+        </a></li>
+        <li class="mobile_link__social"><a href="https://twitter.com/?lang=ru" class="mobile_link__social">Twitter
+          <svg class="mobile_line" width="1" height="22" viewBox="0 0 1 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0.5" x2="0.5" y2="22" stroke="#212121" stroke-opacity="0.2"/>
+            </svg>
+        </a></li>
+        <li class="mobile_link__social"><a href="https://ru-ru.facebook.com/" class="mobile_link__social">
+          Facebook</a>
+         <svg class="mobile_line" width="1" height="22" viewBox="0 0 1 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0.5" x2="0.5" y2="22" stroke="#212121" stroke-opacity="0.2"/>
+            </svg></li>
+        <li class="mobile_link__social"><a href="https://ru.linkedin.com/" class="mobile_link__social">LinkedIn</a></li>
+      </ul>
+    </div>
+
+
+    
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+
+    <script src="./js/modal.js"></script>
             
   </body>
 </html>

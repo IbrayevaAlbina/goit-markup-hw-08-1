@@ -24,11 +24,20 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;
+
+    width: 450px;
+    height: 609px;
     padding: 40px;
-  
+    
+    
     background-color: var(--white);
+
+    @media screen and (min-width:1200px) {
+      width: 528px;
+      height: 581px;
+      padding: 40px;
+      
+    }
   }
   
   
@@ -76,15 +85,27 @@
   
  
   .modal__text {
-    margin-bottom: 12px;
-    font-family: "Roboto", sans-serif;
+
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 20px;
-    line-height: calc(23 / 20);
+    line-height: calc(30/20);
+    
     text-align: center;
     letter-spacing: 0.03em;
-  
+    
     color: var(--dark);
+
+
+    @media screen and (min-width:1200px) {
+
+      font-size: 20px;
+      line-height: calc(23 / 20);
+   
+  
+    }
+
+
   }
   
   .form-field__container {
@@ -242,27 +263,48 @@
 
 
   .checkbox-form__text {
-    font-family: "Roboto", sans-serif;
+
+
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: calc(14/12);
+
+
+letter-spacing: 0.03em;
+
+color: var(--broun);
+user-select: none;
+margin-right: 2px;
+
+
+    @media screen and (min-width:1200px) {
+
   
-    font-size: 14px;
-    line-height: calc(24 / 14);
-  
-    letter-spacing: 0.03em;
-    color: var(--broun);
-    user-select: none;
-    margin-right: 2px;
+      font-size: 14px;
+      line-height: calc(24 / 14);
+    
+    
+      
+    }
   }
   
   .checkbox-form__link {
     font-family: "Roboto", sans-serif;
-  
-    font-size: 14px;
-    line-height: calc(24 / 14);
-  
+    font-size: 12px;
+    line-height: calc(14/12);
+    
     letter-spacing: 0.03em;
     text-decoration-line: underline;
     color: var(--blue);
     user-select: none;
+
+    @media screen and (min-width:1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+      
+    }
   }
 
   .form-field__button {

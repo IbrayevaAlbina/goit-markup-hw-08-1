@@ -1,7 +1,13 @@
 .contacts-social__list {
    display: none;
 
-   @media screen and (min-width:768px) {
+   @media screen and (min-width:768px) and (max-width:1199px) {
+    display: flex;
+    flex-direction: column;
+    
+   }
+
+   @media screen and (min-width:1200px) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,6 +27,20 @@
     align-items: center;
     transition: color var(--transition-dur-and-func),
       fill var(--transition-dur-and-func);
+
+
+      @media screen and (min-width:768px) {
+       font-size: 12px;
+       line-height: 1.16;
+       letter-spacing: 0.02em;
+    
+      }
+
+      @media screen and (min-width:1200px) {
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+      }
 
   &:focus {
         color: #188ce8;
@@ -48,12 +68,26 @@
 
 
   .contacts-social__item {
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+letter-spacing: 0.02em;
+
+
+
+color: #757575;
     list-style-type: none;
     text-decoration: none;
     gap: 30px;
 
     &:not(:last-child) {
         margin-right: 30px;
+        margin-bottom: 10px;
       }
 
     &:hover .contacts-social__link {
@@ -68,10 +102,12 @@
   
   
   .contacts-social__icon--envelop {
+    
     margin-right: 10px;
     fill: var(--broun);
     width: 16px;
     height: 12px;
+  
   }
   
   .contacts-social__icon--smartphone {

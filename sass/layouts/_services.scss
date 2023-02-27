@@ -1,16 +1,58 @@
 .services {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background: #2f303a;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(./../img/main.png);
-    background-color: #c4c4c4;
-    background-position: center;
-    background-repeat: no-repeat;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background: #2f303a;
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ), 
+  url("../img/Header img@1x.jpg");
+  background-color: #c4c4c4;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+  
+  @media (min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution:192dpi) and (max-width: 767px),
+  (min-resolution:2dppx) and (max-width: 767px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4) and (max-width: 767px),  rgba(47, 48, 58, 0.4)),
+    url("../img/Header img@2x.jpg"); 
+    
   }
+
+  @media screen and (min-width: 768px) {
+ 
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../img/Header\ img1@1x.jpg");
+    
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (min-resolution:192dpi) and (min-width: 1200px),
+  (min-resolution:2dppx) and (min-width: 1200px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),  rgba(47, 48, 58, 0.4)),
+    url("../../img/Шапка@2x.jpg"); 
+    
+  }
+
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(  rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../../img/Шапка_1200@1x.jpg");
+    
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (min-resolution:192dpi) and (min-width: 1200px),
+  (min-resolution:2dppx) and (min-width: 1200px) {
+    background-image: linear-gradient( rgba(47, 48, 58, 0.4),  rgba(47, 48, 58, 0.4)),
+    url("../../img/Шапка_1200@2x.jpg"); 
+    
+  }
+
+}
+    
   
   
   
@@ -19,7 +61,7 @@
     font-style: normal;
     font-weight: 900;
     font-size: 26px;
-    // line-height: 1.6px;
+    line-height: 1.6;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -29,7 +71,7 @@
     margin-bottom: 30px;
   
 
-   @media screen and (min-width: 768) {
+   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
